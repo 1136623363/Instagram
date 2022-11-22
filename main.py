@@ -93,7 +93,7 @@ class instagram():
                         img_resp = requests.get(url=img_url, headers=self.headers,timeout=3)
                     except (TimeoutError,ConnectionResetError,requests.exceptions.ReadTimeout,requests.exceptions.ConnectionError,
                             urllib3.exceptions.ReadTimeoutError,urllib3.exceptions.ProtocolError):
-                        print('\nPlease checck your network')
+                        print('\nPlease check your network')
                         #break
                     # finally:
                     #     print('\nDownload Done')
